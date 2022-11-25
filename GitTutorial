@@ -1,0 +1,18 @@
+Create folder path to local:
+	git clone https://github.com/ValdemarLeiras/DigitalTwins.git
+
+Ignore files and folders on update:
+	Select gitignore option
+	Edit .gitignore file with all files and folders that is not needed to update
+
+Check versions:
+	git log
+
+Get new version from server:
+	git pull origin
+
+Put new version on server:
+	git add --all (NOT NEEDED)
+	
+	git commit -am "year-month-day"
+	git push origin
