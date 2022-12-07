@@ -50,7 +50,7 @@ Create Things:
 	sudo nano SignalTower.json
 	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:SignalTower' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @SignalTower.json | jq
 	
-	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @.json | jq
+	curl -X PUT 'http://urladdress:8082/api/2/things/IoT:thingname' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @thingname.json | jq
 
 #############################################################################################################################################################
 #############################################################################################################################################################
