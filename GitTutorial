@@ -16,5 +16,5 @@ Get new version from server:
 
 Put new version on server:
 	git add --all
-	git commit -am "year-month-day (hh:mm)"
+	git commit -am "year-month-day [hh:mm]"
 	git push origin
