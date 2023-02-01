@@ -1,3 +1,6 @@
+Other Git commands:
+	https://ohshitgit.com/
+
 Create folder path to local:
 	git clone https://github.com/ValdemarLeiras/DigitalTwins.git
 
@@ -12,7 +15,6 @@ Get new version from server:
 	git pull origin
 
 Put new version on server:
-	git add --all (NOT NEEDED)
-	
-	git commit -am "year-month-day"
+	git add --all
+	git commit -am "year-month-day [hh:mm]"
 	git push origin
