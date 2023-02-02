@@ -1,4 +1,7 @@
-﻿//Date : 2019-05-31
+﻿//https://github.com/qian256/ur5_unity
+//https://github.com/astemeric/ur5_unity_ik
+
+//Date : 2019-05-31
 //Jason Kreitz UNLV
 
 //Note, not optimized code 
