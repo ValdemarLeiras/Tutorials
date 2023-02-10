@@ -24,19 +24,22 @@ Create Policy:
 	cd
 	cd ditto/policies
 	sudo nano policy.json
-	curl -X PUT 'http://localhost:8082/api/2/policies/DTw:policy' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @policy.json | jq
+	curl -X PUT 'http://localhost:8082/api/2/policies/DTw:policy' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @policy.json | jq (Linux)
+	curl -X PUT http://localhost:8082/api/2/policies/DTw:policy -u ditto:ditto -H Content-Type:application/json -d @policy.json (Windows)
 
 Create MQTT connection:
 	cd
 	cd ditto/connectivity
 	sudo nano mqttDitto.json
-	curl -X POST 'http://localhost:8082/devops/piggyback/connectivity?timeout=10' -u 'devops:foobar' -H 'Content-Type: application/json' -d @mqttDitto.json | jq
+	curl -X POST 'http://localhost:8082/devops/piggyback/connectivity?timeout=10' -u 'devops:foobar' -H 'Content-Type: application/json' -d @mqttDitto.json | jq (Linux)
+	curl -X POST http://localhost:8082/devops/piggyback/connectivity?timeout=10 -u devops:foobar -H Content-Type:application/json -d @mqttDitto.json (Windows)
 
 Create Things:
 	cd
 	cd ditto/things
 	sudo nano Omron.json
-	curl -X PUT 'http://localhost:8082/api/2/things/IoT:Omron' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @Omron.json | jq
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:Omron' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @Omron.json | jq (Linux)
+	curl -X PUT http://localhost:8082/api/2/things/IoT:Omron -u ditto:ditto -H Content-Type:application/json -d @Omron.json (Windows)
 	sudo nano XDK.json
 	curl -X PUT 'http://localhost:8082/api/2/things/IoT:XDK' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @XDK.json | jq
 	sudo nano SDR.json
