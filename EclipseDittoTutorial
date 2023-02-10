@@ -31,10 +31,10 @@ Create Policy:
 Create MQTT connection:
 	cd
 	cd ditto/connectivity
-	sudo nano mqttDitto.json (Linux)
-	curl -X POST 'http://localhost:8082/devops/piggyback/connectivity?timeout=10' -u 'devops:foobar' -H 'Content-Type: application/json' -d @mqttDitto.json | jq
-	code mqttDitto.json (Windows)
-	curl -X POST http://localhost:8082/devops/piggyback/connectivity?timeout=10 -u devops:foobar -H Content-Type:application/json -d @mqttDitto.json | jq
+	sudo nano mqttProtocolConnect.json (Linux)
+	curl -X POST 'http://localhost:8082/devops/piggyback/connectivity?timeout=10' -u 'devops:foobar' -H 'Content-Type: application/json' -d @mqttProtocolConnect.json | jq
+	code mqttProtocolConnect.json (Windows)
+	curl -X POST http://localhost:8082/devops/piggyback/connectivity?timeout=10 -u devops:foobar -H Content-Type:application/json -d @mqttProtocolConnect.json | jq
 
 Create Things:
 	cd
@@ -64,15 +64,20 @@ Create Things:
 	code TestingStation.json (Windows)
 	curl -X PUT http://localhost:8082/api/2/things/IoT:TestingStation -u ditto:ditto -H Content-Type:application/json -d @TestingStation.json | jq
 	
-	sudo nano StationLights.json (Linux)
-	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:StationLights' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @StationLights.json | jq
+	sudo nano TestingStationLights.json (Linux)
+	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:TestingStationLights' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @TestingStationLights.json | jq
 	code StationLights.json (Windows)
-	curl -X PUT http://localhost:8082/api/2/things/IoT:StationLights -u ditto:ditto -H Content-Type:application/json -d @StationLights.json | jq
+	curl -X PUT http://localhost:8082/api/2/things/IoT:TestingStationLights -u ditto:ditto -H Content-Type:application/json -d @TestingStationLights.json | jq
 	
-	sudo nano StationEmergencySwitch.json (Linux)
-	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:StationEmergencySwitch' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @StationEmergencySwitch.json | jq
+	sudo nano TestingStationEmergencyButton.json (Linux)
+	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:TestingStationEmergencyButton' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @TestingStationEmergencyButton.json | jq
 	code StationEmergencySwitch.json (Windows)
-	curl -X PUT http://localhost:8082/api/2/things/IoT:StationEmergencySwitch -u ditto:ditto -H Content-Type:application/json -d @StationEmergencySwitch.json | jq
+	curl -X PUT http://localhost:8082/api/2/things/IoT:TestingStationEmergencyButton -u ditto:ditto -H Content-Type:application/json -d @TestingStationEmergencyButton.json | jq
+	
+	sudo nano AutomaticStation.json (Linux)
+	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:AutomaticStation' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @AutomaticStation.json | jq
+	code TestingStation.json (Windows)
+	curl -X PUT http://localhost:8082/api/2/things/IoT:AutomaticStation -u ditto:ditto -H Content-Type:application/json -d @AutomaticStation.json | jq
 	
 	sudo nano StationSignalLights.json (Linux)
 	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:StationSignalLights' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @StationSignalLights.json | jq
