@@ -23,23 +23,26 @@ cd ditto/deployment/docker:
 Create Policy:
 	cd
 	cd ditto/policies
-	sudo nano policy.json
-	curl -X PUT 'http://localhost:8082/api/2/policies/DTw:policy' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @policy.json | jq (Linux)
-	curl -X PUT http://localhost:8082/api/2/policies/DTw:policy -u ditto:ditto -H Content-Type:application/json -d @policy.json (Windows)
+	sudo nano policy.json (Linux)
+	curl -X PUT 'http://localhost:8082/api/2/policies/DTw:policy' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @policy.json | jq
+	code policy.json (Windows)
+	curl -X PUT http://localhost:8082/api/2/policies/DTw:policy -u ditto:ditto -H Content-Type:application/json -d @policy.json
 
 Create MQTT connection:
 	cd
 	cd ditto/connectivity
-	sudo nano mqttDitto.json
-	curl -X POST 'http://localhost:8082/devops/piggyback/connectivity?timeout=10' -u 'devops:foobar' -H 'Content-Type: application/json' -d @mqttDitto.json | jq (Linux)
-	curl -X POST http://localhost:8082/devops/piggyback/connectivity?timeout=10 -u devops:foobar -H Content-Type:application/json -d @mqttDitto.json (Windows)
+	sudo nano mqttDitto.json (Linux)
+	curl -X POST 'http://localhost:8082/devops/piggyback/connectivity?timeout=10' -u 'devops:foobar' -H 'Content-Type: application/json' -d @mqttDitto.json | jq
+	code mqttDitto.json (Windows)
+	curl -X POST http://localhost:8082/devops/piggyback/connectivity?timeout=10 -u devops:foobar -H Content-Type:application/json -d @mqttDitto.json
 
 Create Things:
 	cd
 	cd ditto/things
-	sudo nano Omron.json
-	curl -X PUT 'http://localhost:8082/api/2/things/IoT:Omron' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @Omron.json | jq (Linux)
-	curl -X PUT http://localhost:8082/api/2/things/IoT:Omron -u ditto:ditto -H Content-Type:application/json -d @Omron.json (Windows)
+	sudo nano OmronTM5.json (Linux)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:OmronTM5' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @OmronTM5.json | jq
+	code OmronTM5.json (Windows)
+	curl -X PUT http://localhost:8082/api/2/things/IoT:OmronTM5 -u ditto:ditto -H Content-Type:application/json -d @OmronTM5.json
 	sudo nano XDK.json
 	curl -X PUT 'http://localhost:8082/api/2/things/IoT:XDK' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @XDK.json | jq
 	sudo nano SDR.json
