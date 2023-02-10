@@ -43,20 +43,46 @@ Create Things:
 	curl -X PUT 'http://localhost:8082/api/2/things/IoT:OmronTM5' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @OmronTM5.json | jq
 	code OmronTM5.json (Windows)
 	curl -X PUT http://localhost:8082/api/2/things/IoT:OmronTM5 -u ditto:ditto -H Content-Type:application/json -d @OmronTM5.json
-	sudo nano XDK.json
-	curl -X PUT 'http://localhost:8082/api/2/things/IoT:XDK' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @XDK.json | jq
-	sudo nano SDR.json
-	curl -X PUT 'http://localhost:8082/api/2/things/IoT:LimeSDR' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @LimeSDR.json | jq
-	sudo nano Lights.json
-	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:Lights' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @Lights.json | jq
-	sudo nano Station.json
-	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:Station' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @Station.json | jq
-	sudo nano Switch.json
-	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:Switch' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @Switch.json | jq
-	sudo nano SignalTower.json
-	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:SignalTower' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @SignalTower.json | jq
 	
-	curl -X PUT 'http://urladdress:8082/api/2/things/IoT:thingname' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @thingname.json | jq
+	sudo nano XDK.json (Linux)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:XDK' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @XDK.json | jq
+	code XDK.json (Windows)
+	curl -X PUT http://localhost:8082/api/2/things/IoT:XDK -u ditto:ditto -H Content-Type:application/json -d @XDK.json
+	
+	sudo nano LimeSDR.json (Linux)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:LimeSDR' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @LimeSDR.json | jq
+	code LimeSDR.json (Windows)
+	curl -X PUT http://localhost:8082/api/2/things/IoT:LimeSDR -u ditto:ditto -H Content-Type:application/json -d @LimeSDR.json
+	
+	sudo nano RollcoBF80MConveyor.json (Linux)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:RollcoBF80MConveyor' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @RollcoBF80MConveyor.json | jq
+	code RollcoBF80MConveyor.json (Windows)
+	curl -X PUT http://localhost:8082/api/2/things/IoT:RollcoBF80MConveyor -u ditto:ditto -H Content-Type:application/json -d @RollcoBF80MConveyor.json
+	
+	sudo nano TestingStation.json (Linux)
+	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:TestingStation' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @TestingStation.json | jq
+	code TestingStation.json (Windows)
+	curl -X PUT http://localhost:8082/api/2/things/IoT:TestingStation -u ditto:ditto -H Content-Type:application/json -d @TestingStation.json
+	
+	sudo nano StationLights.json (Linux)
+	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:StationLights' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @StationLights.json | jq
+	code StationLights.json (Windows)
+	curl -X PUT http://localhost:8082/api/2/things/IoT:StationLights -u ditto:ditto -H Content-Type:application/json -d @StationLights.json
+	
+	sudo nano StationEmergencySwitch.json (Linux)
+	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:StationEmergencySwitch' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @StationEmergencySwitch.json | jq
+	code StationEmergencySwitch.json (Windows)
+	curl -X PUT http://localhost:8082/api/2/things/IoT:StationEmergencySwitch -u ditto:ditto -H Content-Type:application/json -d @StationEmergencySwitch.json
+	
+	sudo nano StationSignalLights.json (Linux)
+	curl -X PUT 'http://192.168.0.69:8082/api/2/things/IoT:StationSignalLights' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @StationSignalLights.json | jq
+	code StationSignalLights.json (Windows)
+	curl -X PUT http://localhost:8082/api/2/things/IoT:StationSignalLights -u ditto:ditto -H Content-Type:application/json -d @StationSignalLights.json
+	
+	sudo nano Component.json
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:Component' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @Component.json | jq
+	code Component.json (Windows)
+	curl -X PUT http://localhost:8082/api/2/things/IoT:Component -u ditto:ditto -H Content-Type:application/json -d @Component.json
 
 #############################################################################################################################################################
 #############################################################################################################################################################
