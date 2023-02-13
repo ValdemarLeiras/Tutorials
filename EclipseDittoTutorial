@@ -59,6 +59,16 @@ Create Things:
 	curl -X PUT 'http://localhost:8082/api/2/things/IoT:RollcoBF80MConveyor' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @RollcoBF80MConveyor.json | jq
 	code RollcoBF80MConveyor.json (Windows)
 	curl -X PUT http://localhost:8082/api/2/things/IoT:RollcoBF80MConveyor -u ditto:ditto -H Content-Type:application/json -d @RollcoBF80MConveyor.json | jq
+			
+	sudo nano ConveyorPhotoelectricInput.json (Linux)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:ConveyorPhotoelectricInput' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @ConveyorPhotoelectricInput.json | jq
+	code StationEmergencySwitch.json (Windows)
+	curl -X PUT http://localhost:8082/api/2/things/IoT:ConveyorPhotoelectricInput -u ditto:ditto -H Content-Type:application/json -d @ConveyorPhotoelectricInput.json | jq
+	
+	sudo nano ConveyorPhotoelectricOutput.json (Linux)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:ConveyorPhotoelectricOutput' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @ConveyorPhotoelectricOutput.json | jq
+	code StationEmergencySwitch.json (Windows)
+	curl -X PUT http://localhost:8082/api/2/things/IoT:ConveyorPhotoelectricOutput -u ditto:ditto -H Content-Type:application/json -d @ConveyorPhotoelectricOutput.json | jq
 	
 	sudo nano TestingStation.json (Linux)
 	curl -X PUT 'http://localhost:8082/api/2/things/IoT:TestingStation' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @TestingStation.json | jq
