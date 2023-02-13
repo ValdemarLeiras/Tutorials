@@ -80,10 +80,10 @@ Create Things:
 	code TestingStation.json (Windows)
 	curl -X PUT http://localhost:8082/api/2/things/IoT:AutomaticStation -u ditto:ditto -H Content-Type:application/json -d @AutomaticStation.json | jq
 	
-	sudo nano StationSignalLights.json (Linux)
-	curl -X PUT 'http://localhost:8082/api/2/things/IoT:StationSignalLights' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @StationSignalLights.json | jq
+	sudo nano AutomaticStationLights.json (Linux)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:AutomaticStationLights' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @AutomaticStationLights.json | jq
 	code StationSignalLights.json (Windows)
-	curl -X PUT http://localhost:8082/api/2/things/IoT:StationSignalLights -u ditto:ditto -H Content-Type:application/json -d @StationSignalLights.json | jq
+	curl -X PUT http://localhost:8082/api/2/things/IoT:AutomaticStationLights -u ditto:ditto -H Content-Type:application/json -d @AutomaticStationLights.json | jq
 	
 	sudo nano Component.json
 	curl -X PUT 'http://localhost:8082/api/2/things/IoT:Component' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @Component.json | jq
