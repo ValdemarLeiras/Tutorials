@@ -9,6 +9,7 @@ Convert WSL 1 para WSL 2:
 	wsl --set-version Ubuntu-20.04 2
 
 Open Ubuntu terminal:
+	/mnt/c/GitHub/Docker/Eclipse Ditto
 	git clone https://github.com/eclipse/ditto.git
 	sudo apt update
 	sudo apt upgrade
