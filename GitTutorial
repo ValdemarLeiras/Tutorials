@@ -16,6 +16,8 @@ Get new version from server:
 
 Create Repository from Laptop:
 	git init
+	git remote add origin https://github.com/ValdemarLeiras/DigitalTwin.git
+	git push --set-upstream origin master
 
 Put new version on server:
 	git add --all
