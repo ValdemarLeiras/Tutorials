@@ -14,6 +14,9 @@ Check versions:
 Get new version from server:
 	git pull origin
 
+Create Repository from Laptop:
+	git init
+
 Put new version on server:
 	git add --all
 	git commit -am "year-month-day [hh:mm]"
