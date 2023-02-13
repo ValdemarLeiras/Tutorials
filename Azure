@@ -1,3 +1,3 @@
 Change password Azure:
-az login
-az vm user update --resource-group GROUPNAME --name VMNAME --username USERNAME --password PASSWORD
+  az login
+  az vm user update --resource-group GROUPNAME --name VMNAME --username USERNAME --password PASSWORD
