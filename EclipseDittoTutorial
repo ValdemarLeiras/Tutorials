@@ -29,7 +29,7 @@ Create Policy:
 	code policy.json (Windows)
 	curl -X PUT http://localhost:8082/api/2/policies/DTw:policy -u ditto:ditto -H Content-Type:application/json -d @policy.json | jq
 
-Create MQTT connection: (CHECK IPADDRESS TO CONNECT TO BROKER)
+Create MQTT connection: (CHECK IPADDRESS TO CONNECT TO BROKER INSTED OF LOCALHOST)
 	cd
 	cd ditto/connectivity
 	sudo nano mqttProtocolConnect.json (Linux)
