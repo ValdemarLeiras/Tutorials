@@ -45,10 +45,10 @@ Create Things:
 	code OmronTM5.json (Windows)
 	curl -X PUT http://localhost:8082/api/2/things/IoT:OmronTM5 -u ditto:ditto -H Content-Type:application/json -d @OmronTM5.json | jq
 	
-	sudo nano XDK.json (Linux)
-	curl -X PUT 'http://localhost:8082/api/2/things/IoT:XDK' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @XDK.json | jq
+	sudo nano XDK110.json (Linux)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:XDK110' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @XDK110.json | jq
 	code XDK.json (Windows)
-	curl -X PUT http://localhost:8082/api/2/things/IoT:XDK -u ditto:ditto -H Content-Type:application/json -d @XDK.json | jq
+	curl -X PUT http://localhost:8082/api/2/things/IoT:XDK110 -u ditto:ditto -H Content-Type:application/json -d @XDK110.json | jq
 	
 	sudo nano LimeSDR.json (Linux)
 	curl -X PUT 'http://localhost:8082/api/2/things/IoT:LimeSDR' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @LimeSDR.json | jq
