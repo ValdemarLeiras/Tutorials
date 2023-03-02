@@ -70,10 +70,25 @@ Create Things:
 	code TestingStation.json (Windows)
 	curl -X PUT http://localhost:8082/api/2/things/IoT:AutomaticStation -u ditto:ditto -H Content-Type:application/json -d @AutomaticStation.json | jq
 	
-	sudo nano Component.json
+	sudo nano Component.json (Linux)
 	curl -X PUT 'http://localhost:8082/api/2/things/IoT:Component' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @Component.json | jq
 	code Component.json (Windows)
 	curl -X PUT http://localhost:8082/api/2/things/IoT:Component -u ditto:ditto -H Content-Type:application/json -d @Component.json | jq
+	
+	sudo nano ZZT-A_ASM1.json (Linux)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:ZZT-A_ASM1' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @ZZT-A_ASM1.json | jq
+	code ZZT-A_ASM1.json (Windows)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:ZZT-A_ASM1' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @ZZT-A_ASM1.json | jq
+	
+	sudo nano ZZT-B_ASM1.json (Linux)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:ZZT-B_ASM1' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @ZZT-B_ASM1.json | jq
+	code ZZT-B_ASM1.json (Windows)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:ZZT-B_ASM1' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @ZZT-B_ASM1.json | jq
+	
+	sudo nano ZZT-B_ASM2.json (Linux)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:ZZT-B_ASM2' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @ZZT-B_ASM2.json | jq
+	code ZZT-B_ASM2.json (Windows)
+	curl -X PUT 'http://localhost:8082/api/2/things/IoT:ZZT-B_ASM2' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @ZZT-B_ASM2.json | jq
 
 #############################################################################################################################################################
 #############################################################################################################################################################
