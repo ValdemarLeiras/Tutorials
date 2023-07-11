@@ -5,6 +5,9 @@ https://docs.npmjs.com/getting-started
 Install nvm:
   Already installed on Ubuntu
 
+Install GCC compiler
+  git clone git://gcc.gnu.org/git/gcc.git
+
 Get Node-Wot library:
   cd Docker
   git clone https://github.com/eclipse-thingweb/Node-Wot
