@@ -1,0 +1,45 @@
+Install npm Node.js:
+https://docs.npmjs.com/getting-started
+  sudo apt install npm
+
+Install nvm:
+  Already installed on Ubuntu
+
+Get Node-Wot library:
+  cd Docker
+  git clone https://github.com/eclipse-thingweb/Node-Wot
+  cd Node-WoT
+  sudo npm run build:docker
+  docker run --rm wot-servient -h
+
+(Steps that maybe aren't needed:)
+  # expose
+  docker run -it --init -p 8080:8080/tcp -p 5683:5683/udp -v "$(pwd)"/examples:/srv/examples --rm wot-servient /srv/examples/scripts/counter.js
+  # consume
+  docker run -it --init -v "$(pwd)"/examples:/srv/examples --rm --net=host wot-servient /srv/examples/scripts/counter-client.js --client-only
+
+Install wam:
+  cd DigitalTwins/Library
+  sudo npm i @arces-wot/wam -g
+
+Start wam:
+  wam init LibraryWoT (name of folder)
+    language: TypeScript
+    name: Twins
+    version: 1.0.0
+    description: DtwsLibrary
+    Enter the keywords separated by a comma:
+    author: Valdemar Leiras
+    license: MIT license
+
+Edit the library:
+  cd LibraryWoT
+  code . (here is needed to build the json description of the thing and the js logic
+
+Build the application:
+  npm run build
+  npm i typescript (maybe needed)
+  npm i @rollup/plugin-typescript (maybe needed)
+
+Start the application:
+  npm start
